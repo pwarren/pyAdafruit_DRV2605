@@ -15,7 +15,7 @@
 #  MIT license, all text above must be included in any redistribution
 ##################################################
 
-from Adafruit_I2C import Adafruit_I2C
+import Adafruit_GPIO.I2C as I2C 
 
 DRV2605_ADDR = 0x5A
 
@@ -63,7 +63,7 @@ DRV2605_REG_LRARESON = 0x22
 
 class Adafruit_DRV2605(object):
 	def __init__(self, busnum=1):
-		self.i2c = Adafruit_I2C(DRV2605_ADDR, busnum=busnum)
+		self.i2c = I2C.Device(DRV2605_ADDR, busnum=busnum)
 	# end def
 	
 	def begin(self):
