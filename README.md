@@ -12,7 +12,10 @@ The python code was written by Sean Mealin.
 
 # Requirements
 
-This python module depends on Adafruit's BeagleBone IO Python Library, which can be found at https://github.com/adafruit/adafruit-beaglebone-io-python.  
+This python module depends on Adafruit's GPIO Python Library, which can be installed with
+ sudo pip install adafruit-gpio
+
+so it can be used with beaglebones and raspberrypis
 
 It has been tested on Ubuntu with kernel 3.8 and above, and newer versions of python 2.7.
 
